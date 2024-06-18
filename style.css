@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+  
+   
+}
+.navbar{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+   position: absolute;
+   z-index: 1;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    letter-spacing: 1.5px;
+}
+.navbar a:hover{
+    color: #F7DC4F;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.navbar button{
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+}
+.navbar p{
+    padding-top: 30px;
+    font-size: 30px;
+    padding-left: 40px;
+    color: #F7DC4F;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+}
+.leftbanner{
+    width: 50%;
+    height: 100%;
+    background-color: #015761 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+ 
+ 
+}
+.rightbanner{
+
+    width: 50%;
+    height: 100%;
+    background-color: blanchedalmond;
+    background-image: url("https://images.pexels.com/photos/20820147/pexels-photo-20820147/free-photo-of-sad-eyes-collection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.aclass{
+    color: #F7DC4F;
+    font-size: 70px;
+    font-weight: 200px;
+    margin-left: 140px;
+}
+.bclass{
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-left: 140px;
+}
+.cclass{
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    margin-left: 140px;
+   
+}
+/*sidenavbar*/
+.sidenav{
+    width: 50px;
+    height: 170px;
+    background-color: #F7DC4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+   top: 280px;
+   right: 0px;
+   
+
+ 
+    
+}
+.sidenav ul{
+    list-style-type: none;
+}
+.sidenav li{
+    margin: 15px;
+}
+.sidenav .fa-brands{
+    font-size: 16px;
+}
+/*about*/
+.about{
+    width: 100%;
+    height: 700px;
+    background-color:#F1F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+   
+   text-align: center;
+letter-spacing: 2px;
+line-height: 40px;
+padding: 30px;
+  
+   margin: 190px;
+   
+}
+.abouthead {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #015761;
+}
+.about button{
+    width: fit-content;
+    height: fit-content;
+   padding: 15px;
+   background-color: #F7DC4F;
+   color: #015761;
+   border: none;
+   margin: 50px 0px;
+   transition: .5s;
+
+}
+.about button:hover{
+    background-color: #015761;
+    color: yellow;
+    transition: .8s;
+}
+/*video*/
+.video{
+    width: 100%;
+    height: 700px;
+    background-color:#FFFFFF;
+}
+.video h1,.container h1{
+    font-size: 80px;
+    color: #015761;
+    text-align: center;
+    padding: 70px 0px;
+}
+/*photos*/
+.container{
+    width: 100%;
+    height: 2000px;
+    background-color: #F1F0F0;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1{
+    grid-area: a;
+}
+.box2{
+    grid-area: b;
+}
+.box3{
+    grid-area: c;
+}
+.box4{
+    grid-area: d;
+}
+.box5{
+    grid-area: e;
+}
+.box6{
+    grid-area: f;
+}
+.content div{
+    
+  background-color: black;
+    border: none;
+
+    
+   
+}
+.content div:hover{
+    background-color: rgba(89, 168, 176, 0.1);
+   
+    z-index: 1;
+}
+.content{
+    width: 1200px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a b b b b"
+                         "c c c d d d"
+                         "e e e e f f";
+                         grid-template-rows: 500px 500px 500px;
+    gap: 30px;
+    
+}
+/*contact*/
+.contact{
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: #F1F0F0;
+    background-image: url("https://images.pexels.com/photos/20820147/pexels-photo-20820147/free-photo-of-sad-eyes-collection.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: #015761;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+}
+.line1 h1{
+    color: #F7DC4F;
+    font-size: 70px;
+    margin: 70px 0px 30px 100px;
+}
+.line1 h5{
+   font-size: 30px;
+   margin-left: 100px;
+}
+.line1 p,.line2 p{
+    line-height: 30px;
+    margin-left: 100px;
+    
+}
+.right h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+   
+}
+.right ul{
+    display: flex;
+    float: left;
+    list-style-type: none;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.right li{
+    margin: 12px;
+    font-size: 15px;
+   
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #F1F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
